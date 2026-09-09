@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>体验卡与培训班管理</title>
+  <style>
+    :root{--main:#29c7b1;--deep:#18a996;--text:#2f3b52;--sub:#758195;--line:#e7edf3;--bg:#f1f4f7}*{box-sizing:border-box}body{min-width:0;margin:0;background:var(--bg);color:var(--text);font:14px "PingFang SC","Microsoft YaHei",sans-serif}.layout{min-height:100vh;display:flex}.sidebar{position:fixed;z-index:2;top:0;bottom:0;left:0;width:224px;background:#fff;border-right:1px solid var(--line)}.brand{height:68px;display:flex;align-items:center;padding:0 24px;border-bottom:1px solid var(--line);font-size:17px;font-weight:700}.nav{padding:14px 10px}.group{margin-bottom:8px}.group-title{width:100%;height:42px;padding:0 14px;border:0;background:#fff;display:flex;align-items:center;justify-content:space-between;color:var(--text);font-weight:700;text-align:left;cursor:pointer}.group-title:hover{background:#f7f9fb}.arrow{color:#8b96a5;font-size:16px;transition:transform .18s}.group.closed .arrow{transform:rotate(-90deg)}.items{padding:4px 0 4px 14px}.group.closed .items{display:none}.nav-item{width:100%;height:40px;padding:0 14px;border:0;border-radius:4px;background:#fff;color:#526075;text-align:left;cursor:pointer}.nav-item:hover{background:#f4fbfa;color:var(--deep)}.nav-item.active{background:#eafaf7;color:var(--deep);font-weight:700}.nav-item.placeholder{color:#a5afbc;cursor:default}.nav-item.placeholder:hover{background:#fff;color:#a5afbc}.content{margin-left:224px;flex:1;min-width:0;min-height:100vh;overflow:hidden}.content iframe{display:block;width:100%;height:100vh;border:0;background:var(--bg)}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">运营管理</div>
+      <nav class="nav">
+        <section class="group" id="trainingGroup">
+          <button class="group-title" onclick="toggleGroup('trainingGroup')"><span>培训班管理</span><span class="arrow">⌄</span></button>
+          <div class="items">
+            <button class="nav-item placeholder" disabled>课程管理</button>
+            <button class="nav-item placeholder" disabled>班级管理</button>
+            <button class="nav-item placeholder" disabled>培训卡列表</button>
+            <button class="nav-item placeholder" disabled>培训会员列表</button>
+            <button class="nav-item" data-page="课次预约.html" onclick="openPage(this)">课表管理</button>
+            <button class="nav-item placeholder" disabled>培训卡类型</button>
+            <button class="nav-item active" data-page="体验卡管理.html" onclick="openPage(this)">体验卡管理</button>
+            <button class="nav-item placeholder" disabled>待办培训卡</button>
+            <button class="nav-item placeholder" disabled>教案管理</button>
+          </div>
+        </section>
+      </nav>
+    </aside>
+    <main class="content"><iframe id="workspace" title="内容区" src="体验卡管理.html"></iframe></main>
+  </div>
+  <script>
+    function toggleGroup(id){document.getElementById(id).classList.toggle('closed')}
+    function openPage(item){document.querySelectorAll('.nav-item').forEach(el=>el.classList.remove('active'));item.classList.add('active');document.getElementById('workspace').src=item.dataset.page}
+  </script>
+</body>
+</html>

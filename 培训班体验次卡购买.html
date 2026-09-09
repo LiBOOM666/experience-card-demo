@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>培训班体验次卡购买</title>
+  <style>
+    :root{--mint:#19c98b;--ink:#20252b;--sub:#8d949d;--line:#edf0f2;--bg:#f5f7f8;--gold:#cfb400;--orange:#ff5b26}*{box-sizing:border-box}body{margin:0;background:#e9edf0;font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink)}button{font:inherit;cursor:pointer}.phone{width:390px;height:844px;margin:20px auto;background:#fff;overflow:hidden;position:relative;box-shadow:0 14px 40px #24304430}.view{display:none;height:100%;background:#fff}.view.active{display:block}.nav{height:88px;padding:38px 18px 0;display:flex;align-items:center;justify-content:space-between;background:#fff}.nav h1{font-size:19px;margin:0;font-weight:700}.back,.nav-side{width:42px;border:0;background:transparent;padding:0;color:#20252a;font-size:33px;line-height:1;text-align:left}.nav-side{text-align:right;font-size:22px;letter-spacing:-4px}.scroll{height:calc(100% - 88px);overflow:auto;padding-bottom:88px}.card{height:218px;margin:14px 16px 22px;padding:24px 21px;border-radius:15px;overflow:hidden;position:relative;color:#fff;background:linear-gradient(135deg,#174e7f,#327cc0 48%,#8ec9f3)}.card:before{content:"";position:absolute;right:-52px;bottom:-90px;width:240px;height:240px;border:29px solid #ffffffbf;border-radius:50%}.card:after{content:"体验";position:absolute;right:20px;bottom:-9px;color:#ffffff2a;font-size:76px;font-weight:700;letter-spacing:8px}.card>*{position:relative;z-index:1}.card-label{font-size:13px;opacity:.86}.card-name{font-size:26px;font-weight:700;margin:17px 0 12px}.card-meta{font-size:15px;line-height:1.95}.card-meta b{font-size:20px}.price-tag{position:absolute;right:0;top:24px;padding:7px 13px;border-radius:18px 0 0 18px;background:#133f6b;font-size:13px}.info-grid{height:103px;margin:0 16px;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.info-item{display:grid;grid-template-columns:32px minmax(0,1fr) 14px;align-items:center;gap:7px;border:0;background:#fff;padding:0 4px;text-align:left;color:var(--ink)}.info-item+.info-item{border-left:1px solid var(--line);padding-left:15px}.icon{font-size:22px}.info-item strong{display:block;font-size:16px;white-space:nowrap}.info-item small{display:block;margin-top:6px;font-size:13px;color:var(--sub);white-space:nowrap}.arrow{font-size:24px;color:#9aa1a7}.notice{margin:24px 16px 0;padding-bottom:28px}.notice h2{font-size:20px;margin:0 0 18px}.notice-row{display:flex;gap:18px;line-height:1.75;margin-top:13px;font-size:15px}.notice-row b{min-width:88px;font-size:16px}.notice-row span{color:#68717a}.fixed-action{position:absolute;z-index:4;bottom:0;left:0;right:0;height:78px;padding:13px 18px;background:#fff;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px}.amount{color:var(--orange);font-size:28px;white-space:nowrap}.buy{height:49px;flex:1;border:0;border-radius:25px;background:var(--gold);color:#fff;font-size:18px;font-weight:700}.order-page{background:var(--bg)}.order-scroll{padding-bottom:88px}.order-card{margin:12px 12px 0;background:#fff;border-radius:12px;padding:16px}.order-card h2{font-size:16px;margin:0 0 15px}.product-row{display:flex;align-items:center;gap:12px}.product-icon{width:50px;height:50px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,#2069a8,#9dd8fa);color:#fff;font-size:18px;font-weight:700}.product-info{min-width:0;flex:1}.product-info strong{display:block;font-size:16px}.product-info small{display:block;margin-top:6px;color:var(--sub);font-size:13px}.product-price{color:var(--orange);font-size:17px}.order-row{display:flex;align-items:center;justify-content:space-between;min-height:53px;border-top:1px solid var(--line);font-size:15px}.order-row:first-of-type{border-top:0}.order-row span:last-child{color:#68717a}.person-options{display:flex;gap:10px}.person{flex:1;min-height:72px;padding:12px;border:1px solid var(--line);border-radius:9px;background:#fff;text-align:left;color:var(--ink)}.person.selected{border-color:var(--mint);background:#f1fcf9}.person strong{display:block;font-size:15px}.person small{display:block;margin-top:7px;color:var(--sub);font-size:12px}.agreement-tip{margin:12px 18px;color:#9aa1a7;font-size:12px;line-height:1.65}.submit-action{padding:13px 18px}.submit-action .amount{font-size:23px}.toast{position:absolute;z-index:12;left:50%;top:50%;transform:translate(-50%,-50%);display:none;max-width:285px;padding:16px 20px;border-radius:10px;background:#202830ec;color:#fff;text-align:center;font-size:14px;line-height:1.7}.toast.show{display:block}@media(max-width:500px){.phone{width:100%;height:100vh;margin:0;box-shadow:none}}
+  </style>
+  <style>
+    .person-page,.order-page{background:var(--bg)}.step-card{margin:12px;background:#fff;border-radius:12px;padding:16px}.step-card h2{margin:0 0 15px;font-size:16px}.person-list{display:grid;gap:10px}.person-row{display:flex;align-items:center;gap:12px;width:100%;padding:14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-align:left;color:var(--ink)}.person-row.selected{border-color:var(--mint);background:#f1fcf9}.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#dff8f1;color:#198f7d;font-weight:700}.person-row strong{display:block;font-size:15px}.person-row small{display:block;margin-top:5px;color:var(--sub);font-size:12px}.check{margin-left:auto;width:18px;height:18px;border:1px solid #cdd5db;border-radius:50%}.person-row.selected .check{border:5px solid var(--mint)}.pay-options{display:flex;gap:10px}.pay-option{flex:1;padding:14px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);text-align:center}.pay-option.selected{border-color:var(--mint);background:#f1fcf9;color:#168c79}.pay-option small{display:block;margin-top:5px;color:var(--sub);font-size:12px}
+  </style>
+  <style>
+    .selection-list{margin:12px;background:#fff}.select-row{width:100%;height:64px;padding:0 16px;border:0;border-bottom:10px solid var(--bg);background:#fff;display:flex;align-items:center;justify-content:space-between;color:var(--ink);font-size:16px;text-align:left}.select-row:last-child{border-bottom:0}.select-value{display:flex;align-items:center;gap:12px;color:#4c555e}.select-value b{font-weight:400}.select-value i{font-style:normal;font-size:27px;line-height:1;color:#313942}.drawer-mask{display:none;position:absolute;z-index:20;inset:0;background:#141b2147}.drawer-mask.show{display:block}.option-drawer{position:absolute;z-index:21;right:0;bottom:0;left:0;padding:18px 18px 28px;background:#fff;border-radius:18px 18px 0 0;transform:translateY(105%);transition:transform .22s ease}.option-drawer.show{transform:translateY(0)}.drawer-title{margin:2px 0 14px;text-align:center;font-size:18px}.drawer-option{display:flex;align-items:center;justify-content:space-between;width:100%;height:54px;border:0;border-bottom:1px solid var(--line);background:#fff;color:var(--ink);text-align:left;font-size:16px}.drawer-option.selected{color:#159d89}.drawer-option i{font-style:normal;font-size:20px}
+  </style>
+</head>
+<body>
+  <main class="phone">
+    <section id="buyView" class="view active">
+      <header class="nav"><button class="back" aria-label="返回">‹</button><h1>培训班体验次卡</h1><button class="nav-side" aria-label="更多">•••</button></header>
+      <div class="scroll">
+        <section class="card"><span class="price-tag">¥99 / 张</span><div class="card-label">培训班体验次卡</div><div class="card-name">少儿游泳体验次卡</div><div class="card-meta">可体验课程：<b>1 次</b><br>有效期：购买后 30 天内有效</div></section>
+        <section class="info-grid">
+          <button class="info-item" onclick="showToast('适用场馆：钱江游泳馆')"><span class="icon">⌂</span><span><strong>适用场馆</strong><small>1 家</small></span><span class="arrow">›</span></button>
+          <button class="info-item" onclick="showToast('可用课程：少儿游泳体验课')"><span class="icon">▤</span><span><strong>可用课程</strong><small>1 种</small></span><span class="arrow">›</span></button>
+        </section>
+        <section class="notice"><h2>购买须知</h2><div class="notice-row"><b>开卡方式：</b><span>购买成功后立即开卡</span></div><div class="notice-row"><b>有效期：</b><span>购买后 30 天内有效</span></div><div class="notice-row"><b>可用次数：</b><span>1 次</span></div><div class="notice-row"><b>约课方式：</b><span>购买后可在小程序约课，或联系工作人员约课。</span></div></section>
+      </div>
+      <footer class="fixed-action"><span class="amount">¥99</span><button class="buy" onclick="showPersonPage()">立即购买</button></footer>
+    </section>
+
+    <section id="personView" class="view person-page">
+      <header class="nav"><button class="back" onclick="showBuyPage()" aria-label="返回">‹</button><h1>报名人员</h1><span class="nav-side"></span></header>
+      <div class="scroll">
+        <section class="step-card"><h2>请选择报名人员</h2><div class="person-list"><button class="person-row selected" onclick="selectPerson(this)"><span class="avatar">李</span><span><strong>本人 · 李明</strong><small>138****5201</small></span><i class="check"></i></button><button class="person-row" onclick="selectPerson(this)"><span class="avatar">张</span><span><strong>联系人 · 张小雨</strong><small>139****8816</small></span><i class="check"></i></button></div></section>
+      </div>
+      <footer class="fixed-action"><button class="buy" onclick="showOrderPage()">下一步</button></footer>
+    </section>
+
+    <section id="orderView" class="view order-page">
+      <header class="nav"><button class="back" onclick="showPersonPage()" aria-label="返回">‹</button><h1>提交订单</h1><span class="nav-side"></span></header>
+      <div class="scroll order-scroll">
+        <section class="order-card"><h2>体验次卡</h2><div class="product-row"><div class="product-icon">体验</div><div class="product-info"><strong>少儿游泳体验次卡</strong><small>1 次体验课 · 购买后 30 天内有效</small></div><span class="product-price">¥99</span></div></section>
+        <section class="selection-list"><button class="select-row" onclick="openDrawer('cardType')"><span>购卡类型</span><span class="select-value"><b id="cardTypeValue">新卡</b><i>›</i></span></button><button class="select-row" onclick="openDrawer('payment')"><span>支付方式</span><span class="select-value"><b id="paymentValue">微信支付</b><i>›</i></span></button></section>
+      </div>
+      <footer class="fixed-action submit-action"><span class="amount">¥99</span><button class="buy" onclick="submitOrder()">提交订单</button></footer>
+    </section>
+    <div id="toast" class="toast"></div>
+    <div id="drawerMask" class="drawer-mask" onclick="closeDrawer()"></div>
+    <section id="optionDrawer" class="option-drawer"><h2 id="drawerTitle" class="drawer-title"></h2><div id="drawerOptions"></div></section>
+  </main>
+  <script>
+    function showView(id){document.querySelectorAll('.view').forEach(view=>view.classList.remove('active'));document.getElementById(id).classList.add('active')}
+    function showPersonPage(){showView('personView')}
+    function showOrderPage(){showView('orderView')}
+    function showBuyPage(){showView('buyView')}
+    function selectPerson(element){document.querySelectorAll('.person-row').forEach(item=>item.classList.remove('selected'));element.classList.add('selected')}
+    function showToast(message){const toast=document.getElementById('toast');toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1700)}
+    let drawerType='';
+    const drawerConfig={cardType:{title:'选择购卡类型',valueId:'cardTypeValue',options:['新卡','续卡']},payment:{title:'选择支付方式',valueId:'paymentValue',options:['微信支付','支付宝支付']}};
+    function openDrawer(type){drawerType=type;const config=drawerConfig[type],current=document.getElementById(config.valueId).textContent;document.getElementById('drawerTitle').textContent=config.title;document.getElementById('drawerOptions').innerHTML=config.options.map(option=>`<button class="drawer-option ${option===current?'selected':''}" onclick="selectDrawer('${option}')"><span>${option}</span><i>${option===current?'✓':''}</i></button>`).join('');document.getElementById('drawerMask').classList.add('show');document.getElementById('optionDrawer').classList.add('show')}
+    function closeDrawer(){document.getElementById('drawerMask').classList.remove('show');document.getElementById('optionDrawer').classList.remove('show')}
+    function selectDrawer(value){document.getElementById(drawerConfig[drawerType].valueId).textContent=value;closeDrawer()}
+    function submitOrder(){window.open('./体验课预约小程序.html','_blank','noopener')}
+  </script>
+</body>
+</html>
